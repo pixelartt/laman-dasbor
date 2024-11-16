@@ -1,69 +1,252 @@
 <html>
  <head>
   <title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
-<style>
-   laman-dasbor
+   Web Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
    body {
-            background-color: #FF8C00;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
         }
-        .container {
+        .header {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .header .info {
+            margin-left: 10px;
+        }
+        .header .info h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .header .info p {
+            margin: 0;
+            font-size: 14px;
+            color: gray;
+        }
+        .header .search {
+            margin-left: auto;
+            display: flex;
             align-items: center;
         }
-        .logo {
+        .header .search input {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .header .search i {
+            margin-left: -25px;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .main-content .highlight {
+            border: 2px solid orange;
+            padding: 10px;
+            position: relative;
             margin-bottom: 20px;
         }
-        .logo img {
-            width: 100px;
-        }
-        h1 {
-            font-size: 24px;
-            margin: 10px 0;
-        }
-        p {
+        .main-content .highlight .title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: orange;
+            color: white;
+            padding: 5px;
             font-size: 14px;
-            margin: 20px 0;
         }
-        .button {
-            background-color: white;
-            color: #FF8C00;
+        .main-content .highlight .view-all {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: black;
+        }
+        .main-content .highlight img {
+            width: 100%;
+            height: auto;
+        }
+        .main-content .highlight .register {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
             border: none;
-            border-radius: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px 0;
             cursor: pointer;
-            width: 150px;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
         }
+        .main-content .organization-list {
+            margin-top: 20px;
+        }
+        .main-content .organization-list h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .main-content .organization-list .organization {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .main-content .organization-list .organization .org-item {
+            border: 2px solid orange;
+            width: 30%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .main-content .organization-list .organization .org-item .title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: orange;
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .main-content .organization-list .organization .org-item img {
+            width: 100%;
+            height: auto;
+        }
+        .main-content .organization-list .organization .org-item .register {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    .main-content .organization-list .organization .org-item .title {
+        position: relative; /* Ubah dari absolute menjadi relative */
+        top: 3; /* Posisi tetap di atas */
+        left: 0; /* Sesuaikan dengan padding jika diperlukan */
+        text-align: center; /* Agar teks berada di tengah */
+        margin-bottom: 10px; /* Jarak dengan gambar */
+    }
+
+    .main-content .organization-list .organization .org-item .register {
+        position: relative; /* Ubah dari absolute menjadi relative */
+        bottom: 0; /* Posisi tetap di bawah */
+        left: 0; /* Sesuaikan dengan padding jika diperlukan */
+        width: 50%;
+         left: 65;
+        text-align: center; /* Teks tombol berada di tengah */
+        display: block; /* Agar tombol berada di bawah elemen lainnya */
+        margin-top: 10px;
+     
+    }
+
+    .main-content .organization-list .organization .org-item img {
+        margin-bottom: 10px; /* Jarak antara gambar dan tombol */
+    }
+</style>
+
   </style>
  </head>
  <body>
-  <div class="container">
-   <div class="logo">
-    <img alt="Campus Conect logo" height="100" src="https://storage.googleapis.com/a1aa/image/YBLohgQpajJeLyXVfjoSYO0cOjYrpSLac7WeXiHhhmpArBjnA.jpg" width="100"/>
+  <div class="header">
+   <img alt="Profile Image" height="50" src="https://storage.googleapis.com/a1aa/image/YfihS1HejxgnUkxE0YfJtVIxbZKpBfhaZkYsF8EyymXw8VGPB.jpg" width="50"/>
+   <div class="info">
+    <h1>
+     Hallo, ALEXA
+    </h1>
+    <p>
+     mulai mendaftar
+    </p>
    </div>
-   <h1>
-    SELAMAT DATANG DI CAMPUS CONECT
-   </h1>
-   <p>
-    masuk sebagai
-   </p>
-   <a href="https://pixelartt.github.io/dasbor-admin/" class="button">admin</a>
-   <a href="https://pixelartt.github.io/login-page-mahasiswa/" class="button">mahasiswa</a>
+   <div class="search">
+    <input placeholder="Search" type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+  </div>
+  <div class="main-content">
+   <div class="highlight">
+    <div class="title">
+     NAMA UKM
+    </div>
+    <div class="view-all">
+     lihat semua
+    </div>
+    <img alt="Highlight Image" height="300" src="https://storage.googleapis.com/a1aa/image/eqfnxiU3HOkhmUaiyVD4RlRiASRfdPRmgxTUBgP9BWzVeVGPB.jpg" width="600"/>
+    <button class="register">
+     Daftar
+    </button>
+   </div>
+   <div class="organization-list">
+    <h2>
+     Daftar Organisasi
+    </h2>
+    <div class="organization">
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+     <div class="org-item">
+      <div class="title">
+       NAMA UKM
+      </div>
+      <img alt="Organization Image" height="300" src="https://storage.googleapis.com/a1aa/image/zLMmOzYhfbWAUSehAQ4f0HPxJIYiRxHJgcOWmXw6hD4beVGPB.jpg" width="200"/>
+      <button class="register">
+       DAFTAR
+      </button>
+     </div>
+    </div>
+   </div>
   </div>
  </body>
 </html>
