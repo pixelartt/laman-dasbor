@@ -1,154 +1,437 @@
+
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Esty
+   RESVENTURE CLUB
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <meta content="Welcome to Resventure Club - Empowering leaders through education." name="description"/>
+  <meta content="Resventure Club, Education, Leadership, Community" name="keywords"/>
+  <meta content="rafael" name="author"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7fafc;
+        }
+        .header {
+            background-color: #b91c1c;
+            color: white;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .text-3xl {
+            font-size: 1.875rem;
+            font-weight: 700;
+        }
+        .text-2xl {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .text-xl {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .text-lg {
+            font-size: 1.125rem;
+        }
+        .text-white {
+            color: white;
+        }
+        .text-gray-600 {
+            color: #718096;
+        }
+        .text-gray-400 {
+            color: #cbd5e0;
+        }
+        .bg-red-800 {
+            background-color: #b91c1c;
+        }
+        .bg-white {
+            background-color: white;
+        }
+        .bg-black {
+            background-color: black;
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .rounded-full {
+            border-radius: 9999px;
+        }
+        .shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+        .hover\:shadow-lg:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .transition-shadow {
+            transition: box-shadow 0.2s;
+        }
+        .duration-200 {
+            transition-duration: 0.2s;
+        }
+        .p-4 {
+            padding: 1rem;
+        }
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .mt-4 {
+            margin-top: 1rem;
+        }
+        .mt-8 {
+            margin-top: 2rem;
+        }
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        .mr-4 {
+            margin-right: 1rem;
+        }
+        .h-16 {
+            height: 4rem;
+        }
+        .h-48 {
+            height: 12rem;
+        }
+        .h-64 {
+            height: 16rem;
+        }
+        .w-full {
+            width: 100%;
+        }
+        .w-64 {
+            width: 16rem;
+        }
+        .object-cover {
+            object-fit: cover;
+        }
+        .hidden {
+            display: none;
+        }
+        .block {
+            display: block;
+        }
+        .space-y-2 > * + * {
+            margin-top: 0.5rem;
+        }
+        .space-x-2 > * + * {
+            margin-left: 0.5rem;
+        }
+        .space-x-4 > * + * {
+            margin-left: 1rem;
+        }
+        .overflow-x-scroll {
+            overflow-x: auto;
+        }
+        .flex-shrink-0 {
+            flex-shrink: 0;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .text-left {
+            text-align: left;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .lg\:grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .md\:w-1\/2 {
+            width: 50%;
+        }
+        .md\:mt-0 {
+            margin-top: 0;
+        }
+        .md\:flex-row {
+            flex-direction: row;
+        }
+        .md\:flex {
+            display: flex;
+        }
+        .md\:text-left {
+            text-align: left;
+        }
+        .md\:text-right {
+            text-align: right;
+        }
+        .md\:mt-4 {
+            margin-top: 1rem;
+        }
+        .md\:mt-8 {
+            margin-top: 2rem;
+        }
+        .md\:items-center {
+            align-items: center;
+        }
+        .md\:justify-between {
+            justify-content: space-between;
+        }
+        .md\:space-x-2 > * + * {
+            margin-left: 0.5rem;
+        }
+        .md\:space-x-4 > * + * {
+            margin-left: 1rem;
+        }
+        .md\:space-y-2 > * + * {
+            margin-top: 0.5rem;
+        }
+        .md\:space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+        .md\:space-y-8 > * + * {
+            margin-top: 2rem;
+        }
+        .md\:overflow-x-scroll {
+            overflow-x: auto;
+        }
+        .md\:flex-shrink-0 {
+            flex-shrink: 0;
+        }
+        .md\:text-center {
+            text-align: center;
+        }
+        .md\:text-left {
+            text-align: left;
+        }
+        .md\:text-right {
+            text-align: right;
+        }
+        .md\:grid {
+            display: grid;
+        }
+        .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .lg\:grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+  </style>
  </head>
- <body class="font-roboto bg-gray-100">
-  <!-- Header -->
-  <header class="bg-white shadow-md">
-   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+ <body>
+  <header class="header">
+   <div class="container flex justify-between items-center">
     <div class="flex items-center">
-     <img alt="Esty logo, a stylized letter 'E' with a shopping cart icon" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/sBBnl5LrfEyqH6VMCQMyiTDBUH9PPfnRuKs9QkrZrKc3yhGUA.jpg" width="50"/>
-     <span class="ml-2 text-2xl font-bold text-gray-800">
-      Esty
-     </span>
-    </div>
-    <div class="flex items-center space-x-4">
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      <i class="fab fa-instagram">
-      </i>
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      <i class="fab fa-facebook">
-      </i>
-     </a>
-     <a class="text-gray-600 hover:text-gray-800" href="#">
-      <i class="fab fa-whatsapp">
-      </i>
-     </a>
-    </div>
-   </div>
-  </header>
-  <!-- Hero Section -->
-  <section class="bg-white py-12">
-   <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2">
-     <h1 class="text-4xl font-bold text-gray-800 mb-4">
-      Discover Unique Handmade Goods
+     <img alt="Harvard University logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/rewKc6f9WsqKD0NS3cci7vau5V7f20xB5wHkg5I2Vll5tkOoA.jpg" width="64"/>
+     <img alt="Harvard University secondary logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/K5u4v5RK3FYqNpxWqYV5W4pVGFZuvJYOc237c5bHYdUql0BF.jpg" width="64"/>
+     <img alt="Harvard University tertiary logo" class="h-16 w-16 mr-4 rounded-full" height="64" src="https://storage.googleapis.com/a1aa/image/pv63nP3djqq2PNGUODx0H3QwXY3ZwKKFFSGopQEc6nYwl0BF.jpg" width="64"/>
+     <h1 class="text-3xl">
+      RESVENTURE CLUB
      </h1>
-     <p class="text-gray-600 mb-6">
-      Find the perfect handmade gift, vintage &amp; on-trend clothes, unique jewelry, and more… lots more.
-     </p>
-     <a class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700" href="#">
-      Shop Now
-     </a>
     </div>
-    <div class="md:w-1/2 mt-8 md:mt-0">
-     <img alt="A collection of handmade goods including jewelry, clothes, and home decor items" class="rounded-md shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/lzrM0seFK6SpGSBWK0oPJi2LkbgieiAdf9gU92yvT2fVLHaQB.jpg" width="600"/>
-    </div>
-   </div>
-  </section>
-  <!-- Featured Products -->
-  <section class="bg-gray-100 py-12">
-   <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
-     Featured Products
-    </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-     <div class="bg-white p-4 rounded-md shadow-md">
-      <img alt="Handmade ceramic mug with intricate patterns" class="w-full h-64 object-cover rounded-md mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/lts7ZQvWvZr3Bx1RNaPZ4qAfU54KbS4BVX4r0EU3EXac5QDKA.jpg" width="300"/>
-      <h3 class="text-xl font-bold text-gray-800">
-       Handmade Ceramic Mug
-      </h3>
-      <p class="text-gray-600 mb-4">
-       $25.00
-      </p>
-      <a class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" href="#">
-       Add to Cart
-      </a>
-     </div>
-     <div class="bg-white p-4 rounded-md shadow-md">
-      <img alt="Vintage leather journal with a rustic look" class="w-full h-64 object-cover rounded-md mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/mdmeE9eJV3meGoiPmVjXdNIMJ264kJy2SFgCJgoUzMJolDNoA.jpg" width="300"/>
-      <h3 class="text-xl font-bold text-gray-800">
-       Vintage Leather Journal
-      </h3>
-      <p class="text-gray-600 mb-4">
-       $40.00
-      </p>
-      <a class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" href="#">
-       Add to Cart
-      </a>
-     </div>
-     <div class="bg-white p-4 rounded-md shadow-md">
-      <img alt="Hand-knitted wool scarf in various colors" class="w-full h-64 object-cover rounded-md mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/vjpNFBHfu7xJSSTUYJgjeZlHxTEBlilh35gE4oBFQUyyyhGUA.jpg" width="300"/>
-      <h3 class="text-xl font-bold text-gray-800">
-       Hand-Knitted Wool Scarf
-      </h3>
-      <p class="text-gray-600 mb-4">
-       $30.00
-      </p>
-      <a class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700" href="#">
-       Add to Cart
-      </a>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- Newsletter Section -->
-  <section class="bg-white py-12">
-   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">
-     Subscribe to our Newsletter
-    </h2>
-    <p class="text-gray-600 mb-6">
-     Get the latest updates on new products and upcoming sales
-    </p>
-    <form class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-     <input class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Enter your email" type="email"/>
-     <button class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700" type="submit">
-      Subscribe
+    <div class="text-right">
+     <button class="text-white focus:outline-none" id="hamburger-button">
+      <i class="fas fa-bars text-2xl">
+      </i>
      </button>
-    </form>
+    </div>
    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8">
-   <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-     <div class="mb-4 md:mb-0">
-      <img alt="Esty logo, a stylized letter 'E' with a shopping cart icon" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/sBBnl5LrfEyqH6VMCQMyiTDBUH9PPfnRuKs9QkrZrKc3yhGUA.jpg" width="50"/>
-      <span class="ml-2 text-2xl font-bold">
-       Esty
-      </span>
-     </div>
-     <nav class="flex space-x-4">
-      <a class="text-gray-400 hover:text-white" href="#">
+   <nav class="hidden mt-4" id="mobile-menu">
+    <ul class="space-y-2">
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
        Home
       </a>
-      <a class="text-gray-400 hover:text-white" href="#">
-       Shop
-      </a>
-      <a class="text-gray-400 hover:text-white" href="#">
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
        About
       </a>
-      <a class="text-gray-400 hover:text-white" href="#">
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
+       Services
+      </a>
+     </li>
+     <li>
+      <a class="block text-white hover:text-gray-400" href="#">
        Contact
       </a>
-     </nav>
-    </div>
-    <div class="mt-4 text-center md:text-left">
-     <p class="text-gray-400">
-      © 2023 Esty. All rights reserved.
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <div class="hero bg-red-800 text-white py-20 flex items-center">
+   <div class="container flex flex-col md:flex-row items-center">
+    <div class="text-left md:w-1/2">
+     <h2 class="text-4xl font-bold mb-4">
+      Welcome to resventure club
+     </h2>
+     <p class="text-xl">
+      Empowering leaders of tomorrow through world-class education.
+     </p>
+     <p class="text-lg mt-4">
+      We prepare and propel leaders to achieve the next elevation—for their organizations and for themselves.
      </p>
     </div>
+    <div class="md:w-1/2 mt-8 md:mt-0">
+     <img alt="Harvard University gate with historic architecture" class="w-full h-64 object-cover rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/3bFIVV9E5CLTBFcskog3XgZ1xMHGR5y3YuF61r8sEM8rl0BF.jpg" width="600"/>
+    </div>
    </div>
-  </footer>
- </body>
-</html>
+  </div>
+  <div class="container py-8">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="Students in a classroom engaged in academic activities" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/BA8k6Tvtx971BpWxAHuXCkIPjGa02u3dLIFurROwxteWLpDKA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Academic Excellence
+      </h3>
+      <p class="text-gray-600">
+       Explore our diverse programs designed to inspire and challenge students.
+      </p>
+     </div>
+    </div>
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="A diverse group of students interacting on campus" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/7Ig19uhJ6j5IKZ15lsQ827GmFkXxlwxIiTmm0Zd3yf7YLpDKA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Global Community
+      </h3>
+      <p class="text-gray-600">
+       Join a vibrant and diverse community of learners from around the globe.
+      </p>
+     </div>
+    </div>
+    <div class="card bg-white rounded-lg shadow">
+     <img alt="Researchers working in a laboratory setting" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/ezQOKBfDCyjEFElmgUGOxQyBMvoXF29PA6AZTN6XrKfEukOoA.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-xl font-bold mb-2">
+       Research Opportunities
+      </h3>
+      <p class="text-gray-600">
+       Engage in groundbreaking research with world-renowned faculty.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     New Title
+    </h2>
+    <div class="flex overflow-x-scroll space-x-4 mt-4">
+     <div class="flex-shrink-0">
+      <img alt="Harvard campus building with students walking" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/i9aMbNRmTs7gBh4HDU6ji6wpLJ8We4Ahk852tke5qbu1WSHUA.jpg" width="300"/>
+      <h3 class="text-lg font-bold mt-2">
+       Campus Life
+      </h3>
+      <p class="text-gray-600">
+       Harvard campus building with students walking.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard library interior with students studying" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/qy12RNpFbUp7BFcGBUSt0K79JJTEOf4qPEWSWXQfplm4WSHUA.jpg" width="300"/>
+      <h3 class="text-lg font-bold mt-2">
+       Library
+      </h3>
+      <p class="text-gray-600">
+       Harvard library interior with students studying.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard sports field with students playing" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/gd93emFlxu3MSyP9RUS77XRmeX3QUHOfQghuO6sZ89zZtkOoA.jpg" width="300"/>
+      <h3 class="text-lg font-bold mt-2">
+       Sports
+      </h3>
+      <p class="text-gray-600">
+       Harvard sports field with students playing.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard dormitory building with students socializing" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/nvKXmbyYiFKaHR3wGJBp2v1ocxj85sTCWKAQ94QJRfFdLpDKA.jpg" width="300"/>
+      <h3 class="text-lg font-bold mt-2">
+       Dormitory
+      </h3>
+      <p class="text-gray-600">
+       Harvard dormitory building with students socializing.
+      </p>
+     </div>
+     <div class="flex-shrink-0">
+      <img alt="Harvard lecture hall with professor teaching" class="h-48 w-64 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/u5HGizJXWp4AHdeoecf6Kxc7MGUuBisRJCccm6UVRGA7tkOoA.jpg" width="300"/>
+      <h3 class="text-lg font-bold mt-2">
+       Lecture Hall
+      </h3>
+      <p class="text-gray-600">
+       Harvard lecture hall with professor teaching.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Another New Title
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+     <div>
+      <h3 class="text-xl font-bold mb-2">
+       Left Section Title
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      </p>
+     </div>
+     <div>
+      <h3 class="text-xl font-bold mb-2">
+       Right Section Title
+      </h3>
+      <p class="text-gray-600 mb-4">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Additional Information
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+     <div class="card bg-white rounded-lg shadow">
+      <img alt="Harvard University event with students participating" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/DYeegZySDPp6j0pu3OKPOWhN4eBsyTvrgaQP2p57PuyltkOoA.jpg" width="300"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2">
+        Student Events
+       </h3>
+       <p class="text-gray-600">
+        Participate in various events and activities organized by the university.
+       </p>
+      </div>
+     </div>
+     <div class="card bg-white rounded-lg shadow">
+      <img alt
